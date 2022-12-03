@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	const menu = document.querySelectorAll('#link');
-	for (let i = 0; i < menu.length; i++) {
+	for (let i = 0; menu.length > i; i++) {
 		let li = menu[i];
 		let menuItem = li.getAttribute('href');
-		console.log(window.location.origin + `/` + menuItem);
-		console.log(window.location.href);
 		if ((window.location.origin + `/` + menuItem) == window.location.href) {
 			menu[i].classList.add('_activeMenu')
 		}
+		console.log(window.location.origin + `/` + menuItem);
+		console.log(window.location.href);
 	}
 	//======================================================
 })
