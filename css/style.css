@@ -230,8 +230,15 @@ body.ie ._ibg img {
 }
 
 ._who-we-are {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   text-align: center;
   margin-bottom: 99px;
+}
+._who-we-are._active {
+  opacity: 1;
+  visibility: visible;
 }
 ._who-we-are p {
   display: flex;
@@ -243,6 +250,11 @@ body.ie ._ibg img {
   ._who-we-are {
     margin-bottom: calc(10px + 89 * ((100vw - 320px) / 1147));
   }
+}
+
+._visible {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /*====================================================================================================*/
@@ -641,6 +653,9 @@ body {
 /*------------------------*/
 /*First section main*/
 .main-title {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
   margin-top: 150px;
   display: flex;
   flex-direction: column;
@@ -650,6 +665,10 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
+}
+.main-title._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .main-title {
@@ -744,11 +763,18 @@ body {
 .main-title__subtext_why-we {
   text-align: center;
   margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
 }
 @media (max-width: 1467px) {
   .main-title__subtext_why-we {
     margin-bottom: calc(10px + 10 * ((100vw - 320px) / 1147));
   }
+}
+.main-title__subtext_why-we._active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .form-Consultation__body {
@@ -940,6 +966,9 @@ body {
   }
 }
 .Who-we-are__title {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -947,6 +976,10 @@ body {
   text-align: center;
   margin-bottom: 14px;
   color: #000000;
+}
+.Who-we-are__title._active {
+  opacity: 1;
+  visibility: visible;
 }
 .Who-we-are__title_why-we {
   text-transform: uppercase;
@@ -1102,8 +1135,15 @@ body {
 }
 
 .grid-Who-we-are__item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   width: 100%;
   object-fit: contain;
+}
+.grid-Who-we-are__item._active {
+  opacity: 1;
+  visibility: visible;
 }
 .grid-Who-we-are__image-item {
   cursor: pointer;
@@ -1444,10 +1484,17 @@ body {
   }
 }
 .grid-why-we__item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.grid-why-we__item._active {
+  opacity: 1;
+  visibility: visible;
 }
 .grid-why-we__image-item_proposals {
   margin-bottom: 50px;
@@ -1505,10 +1552,17 @@ body {
 /*---------------------*/
 /*Section four main*/
 .algoritm__gridOne {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(auto, auto);
   gap: 60px;
+}
+.algoritm__gridOne._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .algoritm__gridOne {
@@ -1657,11 +1711,18 @@ body {
   }
 }
 .algoritm__gridTwo {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(auto, auto);
   gap: 35px;
   justify-content: center;
+}
+.algoritm__gridTwo._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .algoritm__gridTwo {
@@ -1695,11 +1756,18 @@ body {
 
 .swiper {
   max-width: 1508px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
 }
 @media (max-width: 1467px) {
   .swiper {
     max-width: calc(320px + 1188 * ((100vw - 320px) / 1147));
   }
+}
+.swiper._active {
+  opacity: 1;
+  visibility: visible;
 }
 .swiper-slide {
   display: flex;
@@ -1763,9 +1831,16 @@ body {
   }
 }
 .pfofile__photo {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   margin-right: 110px;
   position: relative;
   display: flex;
+}
+.pfofile__photo._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .pfofile__photo {
@@ -1824,7 +1899,14 @@ body {
   }
 }
 .pfofile__content {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   max-width: 685px;
+}
+.pfofile__content._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 767.98px) {
   .pfofile__content {
@@ -1914,11 +1996,18 @@ body {
   }
 }
 .benefits__title {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 91px;
+}
+.benefits__title._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .benefits__title {
@@ -1960,10 +2049,17 @@ body {
   }
 }
 .benefits__right-flex {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   margin-right: 188px;
   display: flex;
   flex-direction: column;
   display: flex;
+}
+.benefits__right-flex._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .benefits__right-flex {
@@ -2002,13 +2098,23 @@ body {
   }
 }
 .benefits__left-flex {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   display: flex;
   flex-direction: column;
+}
+.benefits__left-flex._active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*----------------------------------*/
 /*Contacts--------------------------*/
 .contacts__body {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   background-color: #ededed;
   overflow: hidden;
   position: relative;
@@ -2016,6 +2122,10 @@ body {
   justify-content: space-between;
   top: 150px;
   padding-bottom: 157px;
+}
+.contacts__body._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 1467px) {
   .contacts__body {
@@ -2229,8 +2339,15 @@ body {
   z-index: 100;
 }
 .footer__container {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
   display: flex;
   justify-content: space-between;
+}
+.footer__container._active {
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 991.98px) {
   .footer__container {
@@ -2406,12 +2523,18 @@ body {
   display: flex;
 }
 .footer__socialsicon a {
+  transition: all ease 0.5s 0s;
   color: #ffd911;
   font-size: 41px;
 }
 @media (max-width: 1467px) {
   .footer__socialsicon a {
     font-size: calc(30px + 11 * ((100vw - 320px) / 1147));
+  }
+}
+@media (any-hover: hover) {
+  .footer__socialsicon a:hover {
+    transform: rotate(30deg);
   }
 }
 
@@ -2518,3 +2641,86 @@ body {
 }
 
 /*--------*/
+/*Messege---------*/
+.messege {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background: #ffffff;
+  border: 2px solid #4fcbff;
+}
+@media (max-width: 1467px) {
+  .messege {
+    width: calc(280px + 520 * ((100vw - 320px) / 1147));
+  }
+}
+@media (max-width: 1467px) {
+  .messege {
+    height: calc(173px + 227 * ((100vw - 320px) / 1147));
+  }
+}
+.messege__close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.messege__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.messege__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 23px;
+  color: #4fcbff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 1467px) {
+  .messege__title {
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1147));
+  }
+}
+@media (max-width: 1467px) {
+  .messege__title {
+    line-height: calc(20px + 24 * ((100vw - 320px) / 1147));
+  }
+}
+@media (max-width: 1467px) {
+  .messege__title {
+    margin-bottom: calc(7px + 16 * ((100vw - 320px) / 1147));
+  }
+}
+.messege__text {
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+@media (max-width: 1467px) {
+  .messege__text {
+    font-size: calc(12px + 8 * ((100vw - 320px) / 1147));
+  }
+}
+@media (max-width: 1467px) {
+  .messege__text {
+    line-height: calc(15px + 9 * ((100vw - 320px) / 1147));
+  }
+}
+
+/*--------------*/
