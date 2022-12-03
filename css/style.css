@@ -2115,6 +2115,11 @@ body {
 .contacts__phone-image {
   margin-right: 17px;
 }
+@media (max-width: 767.98px) {
+  .contacts__image {
+    width: 60px;
+  }
+}
 .contacts__phone-number {
   white-space: nowrap;
   font-weight: 600;
