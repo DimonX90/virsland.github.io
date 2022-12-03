@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.querySelectorAll('#link');
 	for (let i = 0; i < menu.length; i++) {
 		let li = menu[i];
+		console.log(window.location.origin + `/` + menuItem);
+		console.log(window.location.href);
 		let menuItem = li.getAttribute('href');
 		if ((window.location.origin + `/` + menuItem) == window.location.href) {
 			menu[i].classList.add('_activeMenu')
