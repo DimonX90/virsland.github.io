@@ -2015,6 +2015,7 @@ body {
   display: flex;
   justify-content: space-between;
   top: 150px;
+  padding-bottom: 157px;
 }
 @media (max-width: 1467px) {
   .contacts__body {
@@ -2025,6 +2026,7 @@ body {
   .contacts__body {
     top: 120px;
     flex-direction: column;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -2037,15 +2039,21 @@ body {
     top: calc(50px + 100 * ((100vw - 320px) / 1147));
   }
 }
+@media (max-width: 1467px) {
+  .contacts__body {
+    padding-bottom: calc(81px + 76 * ((100vw - 320px) / 1147));
+  }
+}
 .contacts__info {
   z-index: 10;
   background-color: #ededed;
   padding-top: 111px;
-  padding-bottom: 157px;
   padding-left: 127px;
   text-align-last: left;
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 157px;
 }
 @media (max-width: 1467px) {
   .contacts__info {
@@ -2054,12 +2062,12 @@ body {
 }
 @media (max-width: 1467px) {
   .contacts__info {
-    padding-bottom: calc(81px + 76 * ((100vw - 320px) / 1147));
+    padding-left: calc(20px + 107 * ((100vw - 320px) / 1147));
   }
 }
 @media (max-width: 1467px) {
   .contacts__info {
-    padding-left: calc(20px + 107 * ((100vw - 320px) / 1147));
+    padding-bottom: calc(81px + 76 * ((100vw - 320px) / 1147));
   }
 }
 @media (max-width: 991.98px) {
@@ -2181,14 +2189,19 @@ body {
   }
 }
 .contacts__map {
-  display: flex;
   position: relative;
+  display: flex;
   background-color: #ededed;
 }
 @media (max-width: 991.98px) {
   .contacts__map {
     align-self: center;
     flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .contacts__map {
+    top: 35px;
   }
 }
 .contacts__map-image {
