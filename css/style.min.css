@@ -379,7 +379,7 @@ body {
 	visibility: visible;
 }
 .main-title_bugalteria {
-	background-image: none;
+	background-image: none !important;
 	background-color: #4fcbff;
 }
 .main-title__body {
