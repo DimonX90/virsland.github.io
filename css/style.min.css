@@ -351,8 +351,10 @@ body {
 .no-webp .main-title {
 	background-image: url("../img/group-of-people-working-out-business-plan-in-an-office 1.png");
 }
-.main-title {
+.webp .main-title {
 	background-image: url("../img/group-of-people-working-out-business-plan-in-an-office 1.webp");
+}
+.main-title {
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: all 0.5s ease 0s;
@@ -2447,7 +2449,4 @@ body {
 		-ms-transform: rotate(30deg);
 		transform: rotate(30deg);
 	}
-}
-.webp .main-title {
-	background-image: url("../img/group-of-people-working-out-business-plan-in-an-office 1.png");
 }
