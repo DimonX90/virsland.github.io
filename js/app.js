@@ -1,4 +1,22 @@
 
+//Check supporting WEBP and add class webp or no-webp to HTML
+function isWebp() {
+	// Check supporting WEBP
+	function testWebP(callback) {
+		let webP = new Image();
+		webP.onload = webP.onerror = function () {
+			callback(webP.height == 2);
+		};
+		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+	}
+	// add class webp or no-webp to HTML
+	testWebP(function (support) {
+		let className = support === true ? 'webp' : 'no-webp';
+		document.documentElement.classList.add(className);
+	});
+}
+isWebp();
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Active nav links=====================================
 	if (document.querySelector('.main-title')) {
@@ -12,11 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	for (let i = 0; menu.length > i; i++) {
 		let li = menu[i];
 		let menuItem = li.getAttribute('href');
-		if ((window.location.origin + `/` + menuItem) == window.location.href) {
+		if ((window.location.protocol + `/` + `/` + window.location.host + `/` + menuItem) == window.location.href) {
 			menu[i].classList.add('_activeMenu')
 		}
-		console.log(window.location.origin + `/` + menuItem);
-		console.log(window.location.href);
 	}
 	//======================================================
 })
