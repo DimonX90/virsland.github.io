@@ -5,14 +5,14 @@
 	<title>Бугалтерія</title>
 	<meta http http-equiv="conten type" content="text/html;charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221206215658" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20221206215658">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221207232504" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221207232504">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,500;1,900&display=swap&_v=20221206215658"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,500;1,900&display=swap&_v=20221207232504"
 		rel="stylesheet">
 
 
@@ -21,7 +21,7 @@
 <body>
 	<header class="header">
 		<div class=" header__wrapper">
-			<div class="header__container _container">
+			<div class="header__container">
 				<div class="header__body">
 					<a href="index.html" class=" header__logo">
 						<div class="header__imagecont">
@@ -72,7 +72,7 @@
 	<main class="page-buhgalteria">
 		<!--First section buhgalteria title-->
 		<section class="main-title main-title_bugalteria">
-			<div class="main-title__body _container main-title__body_buhgalteria">
+			<div class="main-title__body  main-title__body_buhgalteria">
 				<h2 class="main-title__title main-title__title_buhgalteria">БУХГАЛТЕРСЬКИЙ СУПРОВІД<br>
 					БІЗНЕСУ В УКРАЇНІ</h2>
 				<div class="main-title__subtext">Шукаєте кому передати бухгалтерські питання? VIRS пропонує індивідуальні
@@ -111,19 +111,31 @@
 					</div>
 					<div class="Who-we-are__numbers numbers">
 						<div class="numbers__item">
-							<div class="numbers__num" data-digits-counter>8<span>+</span></div>
+							<div class="numbers__block">
+								<div class="numbers__num" data-digits-counter>8</div><span>+</span>
+							</div>
+
 							<div class="numbers__text">Років досвіду</div>
 						</div>
 						<div class="numbers__item">
-							<div class="numbers__num" data-digits-counter>45<span>+</span></div>
+							<div class="numbers__block">
+								<div class="numbers__num" data-digits-counter>45</div><span>+</span>
+							</div>
+
 							<div class="numbers__text">Клієнтів щомісяця</div>
 						</div>
 						<div class="numbers__item">
-							<div class="numbers__num" data-digits-counter>14</div>
+							<div class="numbers__block">
+								<div class="numbers__num" data-digits-counter>14</div>
+							</div>
+
 							<div class="numbers__text">Професіонналів у<br> клманді</div>
 						</div>
 						<div class="numbers__item">
-							<div class="numbers__num" data-digits-counter>420</div>
+							<div class="numbers__block">
+								<div class="numbers__num" data-digits-counter>420</div>
+							</div>
+
 							<div class="numbers__text">задоволених клієнтів</div>
 						</div>
 					</div>
@@ -179,10 +191,10 @@
 						</div>
 					</div>
 					<div class="grid-why-we__item _animeItem">
-						<div class="grid-why-we__image-item">
+						<div class="grid-why-we__image-item grid-why-we__image-item_proposals">
 							<picture>
-								<source srcset="img/buhg3.webp" type="image/webp"><img
-									class="grid-why-we__image grid-why-we__image-item_proposals" src="img/buhg3.png" alt="icon">
+								<source srcset="img/buhg3.webp" type="image/webp"><img class="grid-why-we__image"
+									src="img/buhg3.png" alt="icon">
 							</picture>
 						</div>
 						<div class="grid-why-we__content grid-why-we__content_proposals">
@@ -241,18 +253,16 @@
 							</picture>
 						</div>
 						<div class="grid-why-we__content grid-why-we__content_proposals">
-							<h3 class="Who-we-are__title _animeItem">ПРОФЕСІЙНА<br>КОНСУЛЬТАЦІЯ<br>БУХГАЛТЕРА</h3>
+							<h3 class="Who-we-are__title _animeItem">ПРОФЕСІЙНА<br>КОНСУЛЬТАЦІЯ<br>ГОЛОВНОГО БУХГАЛТЕРА</h3>
 						</div>
 					</div>
 				</div>
 
 			</div>
 			<div class="why-we__form ">
-				<h3 class="Who-we-are__title _animeItem _container">ЦІКАВА ВАРТІСТЬ ПОСЛУГ?</h3>
-				<div class="main-title__subtext main-title__subtext_why-we _animeItem _container">Заповніть заявку і наш
-					менеджер
-					зв'яжеться з
-					Вами, щоб <br> розрахувати вартість та розповісти більше про те як ми працюємо</div>
+				<h3 class="Who-we-are__title _animeItem _container">ЗАЛИШИЛИСЬ ПИТАННЯ?</h3>
+				<div class="main-title__subtext main-title__subtext_why-we _animeItem _container">Отримайте безкоштовну
+					консультацію наших експертів</div>
 				<form action="#" id="form-Consultation" class="form-Consultation__body _container">
 
 					<div class="form-Consultation__item form-Consultation__item_tel">
@@ -373,7 +383,7 @@
 		</div>
 	</div>
 	<!--       -->
-	<script src="js/app.min.js?_v=20221206215658"></script>
+	<script src="js/app.min.js?_v=20221207232504"></script>
 </body>
 
 </html>
